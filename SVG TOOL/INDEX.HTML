@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SVG Drawing Tool</title>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+#toolbar {
+  margin: 10px;
+}
+
+svg {
+  border: 2px dashed #ccc;
+  width: 90vw;
+  height: 70vh;
+  background: #f9f9f9;
+}
+
+button, input {
+  padding: 8px;
+  margin: 5px;
+}
+</style>
+</head>
+
+<body>
+
+<h2>SVG Drawing Tool</h2>
+
+<div id="toolbar">
+  Color:
+  <input type="color" id="colorPicker" value="#0066ff">
+  <button onclick="undo()">Undo</button>
+  <button onclick="clearCanvas()">Clear</button>
+</div>
+
+<svg id="canvas"></svg>
+
+<script src="script.js"></script>
+
+</body>
+</html>
